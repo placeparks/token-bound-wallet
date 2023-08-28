@@ -33,7 +33,7 @@ const Home = () => {
             nfts={nfts}
             isLoading={isLoading}
             emptyText={
-              "Looks like you don't own any NFTs. Did you import your contract on the thirdweb dashboard? https://thirdweb.com/dashboard"
+              "Looks like you don't own any NFTs."
             }
           />
           <div className={styles.btnContainer}>
