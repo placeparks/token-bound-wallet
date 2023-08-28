@@ -17,7 +17,7 @@ import {
 	  sdkOptions={{
 		gasless: {
 		  openzeppelin: {
-			relayerUrl: uri,
+			relayerUrl: "https://api.defender.openzeppelin.com/autotasks/469392cd-961d-4eea-b4c5-ae12b1462d6c/runs/webhook/36059226-011f-4b40-a191-ff5adcb4a794/4pvgTxrvCjDyhPjbNGoJoY",
 		  },
 		},
 	  }}
