@@ -21,13 +21,13 @@ const Home = () => {
   const { data: nfts, isLoading } = useOwnedNFTs(nftDropContract, address)
 
   return (
-    <Container maxWidth="lg">
+    <div className={styles.mainPage}>
+    <Container maxWidth="lg" >
       {address ? (
         <div className={styles.container}>
           <h1>Your NFTs</h1>
           <p>
-            Browse the NFTs inside your personal wallet, select one to connect a
-            token bound smart wallet & view it&apos;s balance.
+          Browse NFTs in Your Personal Wallet, Link Up with a Token-Bound Smart Wallet, and Uncover Its Wealth at a Glance!
           </p>
           <NFTGrid
             nfts={nfts}
@@ -62,11 +62,12 @@ const Home = () => {
         </div>
       ) : (
         <div className={styles.container}>
-          <h2>Connect a personal wallet to view your owned NFTs</h2>
-          <ConnectWallet />
+          <h2 style={{marginTop:"9vh", fontFamily:"Montserrat"}}>Connect Your Wallet, Claim a Unique Token-Wallet, and Mint, Manage, or Transfer Your Digital Identity with a Single NFT!</h2>
+         
         </div>
       )}
     </Container>
+    </div>
   )
 }
 

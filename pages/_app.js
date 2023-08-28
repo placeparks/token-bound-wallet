@@ -12,7 +12,7 @@ import {
 	const paperClientId = process.env.NEXT_PUBLIC_PAPER_CLIENT_ID;
 	const uri = process.env.NEXT_PUBLIC_URI;
 	return (
-		
+
 	  <ThirdwebProvider
 	  sdkOptions={{
 		gasless: {
@@ -29,6 +29,7 @@ import {
 		<Navbar />
 		<Component {...pageProps} />
 	  </ThirdwebProvider>
+
 	)
   }
   
