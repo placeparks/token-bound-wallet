@@ -1,8 +1,8 @@
 import {
 	ThirdwebProvider,
-	coinbaseWallet,
-	metamaskWallet,
-	walletConnect,paperWallet,smartWallet, localWallet
+	paperWallet,
+	smartWallet, 
+	localWallet
   } from "@thirdweb-dev/react"
   import "../styles/globals.css"
   import { Navbar } from "../components/Navbar/Navbar"
@@ -22,7 +22,7 @@ import {
 		},
 	  }}
 		activeChain={activeChain}
-		supportedWallets={[metamaskWallet(), coinbaseWallet(), walletConnect(), paperWallet({paperClientId: paperClientId, gasless: true}), smartWallet(), localWallet()]}
+		supportedWallets={[ paperWallet({paperClientId: paperClientId, gasless: true}), smartWallet(), localWallet()]}
 		clientId={TWApiKey}
 		secretKey={process.env.NEXT_PUBLIC_TEMPLATE_SECRET_KEY}
 	  >
